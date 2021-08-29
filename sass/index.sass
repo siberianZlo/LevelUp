@@ -1,0 +1,156 @@
+@import "fonts.sass"
+@import "carousel.sass"
+@import "timer.sass"
+
+body
+    font-family: RobotoMedium
+
+.section-product
+    margin-top: 100px
+
+section
+    div
+        h2
+            text-align: center
+#video-bg
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    overflow: hidden
+    background-size: cover
+
+#video-bg
+    video
+        position: absolute
+        top: 0
+        left: 0
+        min-width: 100%
+        min-height: 100%
+        width: auto
+        height: auto
+        z-index: -1
+
+@supports (object-fit: cover)
+    #video-bg
+        video
+            top: 0
+            left: 0
+            width: 100%
+            height: 700px
+            object-fit: cover
+
+.product-promo
+    height: 700px
+    color: #fff
+    padding-top: 100px
+
+.title-product,
+.img-product
+    display: flex
+    justify-content: center
+    align-items: center
+
+.title-product
+    margin-bottom: 50px
+
+.property-product
+    div
+        margin-bottom: 50px
+        p
+            font-size: 30px
+
+.btn-block
+    text-align: center
+
+.product-composition__block
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+.product-composition__elem
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin-bottom: 50px
+
+.product-composition__elem-circle
+    width: 200px
+    height: 200px
+    border-radius: 50%
+    background-image: url(../img/ingredient.jpg)
+    background-position: center center
+    background-size: cover
+
+.product-composition__elem-text
+    text-align: center
+    margin-top: 20px
+
+.product-composition__elem-text
+    p
+        font-size: 20px
+        font-family: RobotoBold
+
+.product-doctor__specifications
+    display: flex
+    justify-content: center
+    font-size: 30px
+
+.product-doctor__specifications
+    margin-top: 50px
+    p
+        margin-right: 30px
+
+.product-doctor__text
+    display: flex
+    align-items: center
+    div
+        p
+            font-size: 18px
+            font-family: RobotoRegular
+
+.product-price__block
+    text-align: center
+
+.product-price
+    margin-top: 20px
+    p
+        font-size: 20px
+
+.product-priceOld
+    text-decoration: line-through
+    font-size: 25px !important
+
+.product-priceNew
+    font-size: 30px !important
+
+.form__block
+    background-color: #D3D3D3
+    padding: 20px
+    border-radius: 10px
+
+.form-section
+    vertical-align: middle
+    p
+        font-size: 30px
+        font-family: RobotoBold
+        margin-top: 20%
+
+.img-productPrice
+    img
+        width: 200px
+
+.label__block
+    display: flex
+    justify-content: space-between
+
+.form-label
+    font-size: 20px
+
+.help-text
+    color: green
+    opacity: 0
+
+@import "mobile.sass"

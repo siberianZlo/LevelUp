@@ -1,0 +1,327 @@
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/Roboto-Regular.ttf"); }
+@font-face {
+  font-family: "RobotoMedium";
+  src: url("../fonts/Roboto-Medium.ttf"); }
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../fonts/Roboto-Bold.ttf"); }
+.testimonials {
+  max-width: 800px;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+  position: relative; }
+
+.scroller {
+  overflow-x: scroll;
+  display: flex;
+  scroll-snap-type: x mandatory; }
+
+.item-carousel {
+  min-width: 100%;
+  scroll-snap-align: center;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 0 50px; }
+  .item-carousel img {
+    margin: 15px auto -60px;
+    width: 120px;
+    height: 120px;
+    border: solid 4px #ffffff;
+    border-radius: 60px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    z-index: 2; }
+
+.card-carousel {
+  background-color: #edf2f7;
+  padding: 80px 40px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  z-index: 1; }
+  .card-carousel p {
+    font-style: italic;
+    line-height: 1.6; }
+  .card-carousel span {
+    display: block;
+    margin-top: 20px;
+    color: teal;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase; }
+
+.testimonials .btn-carousel {
+  position: absolute;
+  top: 50%;
+  margin-top: 20px;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: rgba(95, 106, 117, 0.3);
+  z-index: 1;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  font-weight: bold; }
+  .testimonials .btn-carousel:hover {
+    background-color: rgba(95, 106, 117, 0.5);
+    cursor: pointer; }
+  .testimonials .btn-carousel.next {
+    right: 15px; }
+  .testimonials .btn-carousel.prev {
+    left: 15px; }
+
+@media screen and (max-width: 480px) {
+  .item {
+    padding: 0 30px; }
+
+  .card-carousel {
+    padding: 80px 30px 30px; } }
+.timer__block {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center; }
+
+.timer {
+  display: flex; }
+  .timer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: #0d6efd;
+    padding: 10px;
+    border-radius: 15px; }
+    .timer div span {
+      font-size: 30px; }
+
+.title-timer {
+  text-align: center;
+  margin-top: 50px; }
+  .title-timer p {
+    font-size: 28px;
+    font-family: RobotoBold; }
+
+body {
+  font-family: RobotoMedium; }
+
+.section-product {
+  margin-top: 100px; }
+
+section div h2 {
+  text-align: center; }
+
+#video-bg {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  background-size: cover; }
+
+#video-bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1; }
+
+@supports (object-fit: cover) {
+  #video-bg video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    object-fit: cover; } }
+.product-promo {
+  height: 700px;
+  color: #fff;
+  padding-top: 100px; }
+
+.title-product,
+.img-product {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.title-product {
+  margin-bottom: 50px; }
+
+.property-product div {
+  margin-bottom: 50px; }
+  .property-product div p {
+    font-size: 30px; }
+
+.btn-block {
+  text-align: center; }
+
+.product-composition__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.product-composition__elem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px; }
+
+.product-composition__elem-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(../img/ingredient.jpg);
+  background-position: center center;
+  background-size: cover; }
+
+.product-composition__elem-text {
+  text-align: center;
+  margin-top: 20px; }
+
+.product-composition__elem-text p {
+  font-size: 20px;
+  font-family: RobotoBold; }
+
+.product-doctor__specifications {
+  display: flex;
+  justify-content: center;
+  font-size: 30px; }
+
+.product-doctor__specifications {
+  margin-top: 50px; }
+  .product-doctor__specifications p {
+    margin-right: 30px; }
+
+.product-doctor__text {
+  display: flex;
+  align-items: center; }
+  .product-doctor__text div p {
+    font-size: 18px;
+    font-family: RobotoRegular; }
+
+.product-price__block {
+  text-align: center; }
+
+.product-price {
+  margin-top: 20px; }
+  .product-price p {
+    font-size: 20px; }
+
+.product-priceOld {
+  text-decoration: line-through;
+  font-size: 25px !important; }
+
+.product-priceNew {
+  font-size: 30px !important; }
+
+.form__block {
+  background-color: #D3D3D3;
+  padding: 20px;
+  border-radius: 10px; }
+
+.form-section {
+  vertical-align: middle; }
+  .form-section p {
+    font-size: 30px;
+    font-family: RobotoBold;
+    margin-top: 20%; }
+
+.img-productPrice img {
+  width: 200px; }
+
+.label__block {
+  display: flex;
+  justify-content: space-between; }
+
+.form-label {
+  font-size: 20px; }
+
+.help-text {
+  color: green;
+  opacity: 0; }
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .form-label {
+    font-size: 15px; }
+
+  .help-text {
+    font-size: 13px; }
+
+  .product-doctor__img img {
+    width: 90%; }
+
+  .product-doctor div h2 {
+    margin-bottom: 50px; } }
+@media (min-width: 768px) and (max-width: 1000px) {
+  .img-product img {
+    width: 200px;
+    height: auto; }
+
+  .product-composition__elem-circle {
+    width: 150px;
+    height: 150px; }
+
+  .product-doctor__img {
+    text-align: center;
+    margin-top: 50px !important; }
+
+  .product-doctor__specifications p {
+    font-size: 22px; }
+
+  .form-section p {
+    font-size: 22px; } }
+@media (max-width: 1000px) {
+  .label__block {
+    flex-direction: column; } }
+@media (min-width: 300px) and (max-width: 767.93px) {
+  .product-promo {
+    height: auto;
+    padding-top: 50px; }
+
+  .title-product {
+    text-align: center; }
+
+  .property-product div p {
+    color: black; }
+
+  .property-product__text {
+    margin-top: 150px; }
+
+  .img-product img {
+    width: 250px; }
+
+  .product-composition__elem {
+    margin-top: 50px; }
+
+  .product-doctor__img {
+    text-align: center; }
+    .product-doctor__img img {
+      width: 300px; }
+
+  .product-doctor__specifications {
+    display: flex;
+    flex-direction: column; }
+
+  .timer div {
+    margin-right: 10px;
+    padding: 5px; }
+    .timer div span {
+      font-size: 22px; }
+
+  .item-carousel {
+    padding: 0; }
+
+  .form-section p {
+    font-size: 25px; }
+
+  .form-label {
+    font-size: 18px; } }
+
+/*# sourceMappingURL=index.css.map */
