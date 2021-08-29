@@ -6,4 +6,4 @@
 :white_check_mark: Sass
 :white_check_mark: Jquery
 :white_check_mark: JavaScript
-:white_check_mark: Boostrap
+:white_check_mark: Bootstrap
